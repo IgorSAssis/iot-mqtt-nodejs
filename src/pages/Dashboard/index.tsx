@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 
 import "./styles.css";
 
@@ -78,10 +78,39 @@ function Dashboard() {
                     <div className="device-name-wrapper">
                         <label htmlFor="search-device">Nome do dispositivo</label>
                         <input id="search-device" type="text" placeholder="Ex: Pac 3200" />
+                        <button type="button">
+                            <AiOutlineSearch size={24}/>
+                        </button>
                     </div>
 
                 </div>
 
+                <div className="device-data-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Dispositivo</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Valor medido</th>
+                                <th scope="col">Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pac 3200</td>
+                                <td>Tensão</td>
+                                <td>220.13 V</td>
+                                <td>14:25:00 - 01-12-2020</td>
+                            </tr>
+                            <tr>
+                                <td>Pac 3200</td>
+                                <td>Tensão</td>
+                                <td>220.13 V</td>
+                                <td>14:25:00 - 01-12-2020</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </div>

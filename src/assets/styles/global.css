@@ -6,7 +6,7 @@
     --color-background-grey-light: #DDD;
     --color-background-grey-dark: #555;
     --color-background-grey-darker: #777;
-    --color-background: #EEE;
+    --color-background-grey-lighter: #EEE;
     --color-white-rgba-03: rgba(255, 255,255, 0.3);
 
 }
@@ -21,7 +21,7 @@ html, body #root {
     height: 100vh;
 }
 
-h1, h4, label, button, a {
+h1, h4, label, button, a, th, td {
     font-family: Cairo;
 } 
 

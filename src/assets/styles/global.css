@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+:root {
+    --color-white: #FFFFFF;
+    --color-background-grey: #CCC;
+    --color-background-grey-light: #DDD;
+    --color-background-grey-dark: #555;
+    --color-background-grey-darker: #777;
+    --color-background: #EEE;
+    --color-white-rgba-03: rgba(255, 255,255, 0.3);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body #root {
+    height: 100vh;
+}
+
+h1, h4, label, button, a {
+    font-family: Cairo;
+} 
+
+body {
+    background-color: var(--color-background);
+}

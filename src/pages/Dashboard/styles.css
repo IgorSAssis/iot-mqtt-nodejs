@@ -1,0 +1,164 @@
+#dashboard-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+#dashboard-page #toggle-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 30px;
+    height: 60px;
+    font-size: 20px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--color-background-grey-light);
+    border-radius: 5px 70px 70px 5px;
+
+    transition: background 0.2s;
+}
+
+#dashboard-page #toggle-sidebar:hover {
+    background-color: var(--color-background-grey);
+}
+
+#dashboard-page div.sidebar {
+    position: fixed;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+
+    background-color: darkcyan;
+}
+
+#dashboard-page div.sidebar h1 {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+#dashboard-page div.sidebar div.menu-option button {
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+
+    transition: background 0.2s;
+}
+
+#dashboard-page div.sidebar div.menu-option button:hover {
+    background-color: var(--color-background);
+}
+
+#dashboard-page div.sidebar div.menu-option div {
+    height: 0;
+    overflow: hidden;
+
+    transition: height 0.5s;
+}
+
+#dashboard-page div.sidebar div.menu-option div.active {
+    height: 155px;
+}
+
+#dashboard-page div.sidebar div.menu-option div a {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+
+    text-decoration-line: none;
+    color: var(--color-white);
+
+    transition: background 0.28s ease-out;
+}
+
+#dashboard-page div.sidebar div.menu-option div a:hover {
+    background-color: var(--color-white-rgba-03);
+}
+
+#dashboard-page .dashboard-page-content {
+    margin-left: 16%;
+    padding: 5px 20px;
+}
+
+#dashboard-page .dashboard-page-content h1 {
+    margin-bottom: 10px;
+}
+
+#dashboard-page .dashboard-page-content button {
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-background-grey-dark);
+    border: none;
+    outline: none;
+}
+
+#dashboard-page .dashboard-page-content button:hover {
+    color: var(--color-background-grey-darker);
+    text-decoration-line: underline;
+}
+
+#dashboard-page .dashboard-page-content button::before {
+    content: ">";
+    margin-right: 5px;
+}
+
+#dashboard-page .dashboard-page-content .filter-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    background-color: var(--color-white);
+    border: thin solid var(--color-background-grey);
+    border-radius: 15px;
+}
+
+#dashboard-page .dashboard-page-content .filter-container .measurement-unit-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#dashboard-page .dashboard-page-content .filter-container .measurement-unit-wrapper input[type=radio] {
+    margin-right: 7px;
+}
+
+#dashboard-page .dashboard-page-content .filter-container .device-name-wrapper {
+    position: relative;
+}
+
+#dashboard-page .dashboard-page-content .filter-container .device-name-wrapper label {
+    position: absolute;
+    top: -18px;
+    left: 15px;
+    background-color: var(--color-white);
+    padding: 0 10px;
+}
+
+#dashboard-page .dashboard-page-content .filter-container .device-name-wrapper input {
+    width: 100%;
+    padding: 14px 14px;
+    border: thin solid var(--color-background-grey);
+    outline: none;
+    border-radius: 10px;
+}
